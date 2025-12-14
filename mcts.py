@@ -1,7 +1,6 @@
 def mcts(root, root_turn, iterations=3000):
     for _ in range(iterations):  # بلف عدد معين من المرات (iterations) عشان أعمل محاكاة كتير
         node = root  # ببدأ من النود الأساسي (الجذر)
-
         # Selection
         while node.is_fully_expanded() and node.children:  
             # طول ما النود اتوسع بالكامل ولسه عنده أطفال
@@ -26,3 +25,4 @@ def mcts(root, root_turn, iterations=3000):
         # باختار الchild اللي اتزور أكتر (أكتر تجربة)
         return best_child.move  # وأرجع الحركة اللي وصلتنا له
     return None  # لو مفيش children يبقى مفيش حركة
+
