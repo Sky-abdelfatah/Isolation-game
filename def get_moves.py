@@ -5,7 +5,6 @@ def get_moves(position, board, other_player_pos):
 
     """ PLUS movement only """
     # تعليق بيشرح إن الحركة مسموح بها في اتجاهات + فقط (فوق، تحت، يمين، شمال)
-
     r, c = position
     # r = رقم الصف
     # c = رقم العمود
